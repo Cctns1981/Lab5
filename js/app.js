@@ -10,10 +10,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) {
   let theSum = a + b;
-  let message = ' The sum of ' + a + 'and' + b + 'is' + theSum + '.';
+  let message = ' The sum of ' + a + ' and ' + b + ' is ' + theSum + '.';
+  console.log(message);
   return [theSum, message];
 }
-sum(4,7);
+sum(4, 7);
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -28,9 +29,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
-
+function multiply(a, b) {
+  let theProduct = a * b;
+  let productMessage = ' The product of ' + a + ' and ' + b + ' is ' + theProduct + '.';
+  console.log(productMessage);
+  return [theProduct, productMessage];
 }
+multiply(5, 9);
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
